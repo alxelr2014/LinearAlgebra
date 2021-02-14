@@ -1,0 +1,42 @@
+\chapter{Linear Equation}
+\thispagestyle{headings}
+\section{Fields}
+The set \(\Field\) together with two operation \(+\), addition, and \(\cdot\), multiplication, that satisfy the follwings is called a \textbf{field}. For all \(x,y,z \in \Field\)
+\begin{enumerate}
+    \item Addition and multiplication are \textit{commutative}
+          \[ x + y = y + x \qquad \qquad x \cdot y = y \cdot x\]
+    \item Addition and multiplication are \textit{associative}
+          \[x + (y + z) = (x + y) + z \qquad \qquad x \cdot (y \cdot z) = (x \cdot y) \cdot z\]
+    \item Multiplication distributes over addition
+          \[x \cdot (y + z)  = x \cdot y +  x \cdot z\]
+    \item There exists an element \(0\), zero, in \(\Field\) such that \(x + 0 = x\).
+    \item There exists an element \(1\) , one, in \(\Field\) such that \(x \cdot 1 = x\).
+    \item For each element \(x \in \Field\) there corresponds a unique element \( y \in \Field\) such that \(x + y  = 0\). \(y\) is commonly denoted as \(-x\).
+    \item For each non-zero element \(x \in \Field\) there corresponds a unique element \( y \in \Field\) such that \(x \cdot y  = 1\). \(y\) is commonly denoted as \(x^{-1}\) or \(\frac{1}{x}\).
+    \item \(\Field\) is closed under addition and multiplication.
+          \[x + y \in \Field \qquad \qquad x \cdot y \in \Field\]
+\end{enumerate}
+
+\begin{definition} [Characteristics]
+    Let \(n\) be the least number such that
+    \begin{equation}
+        \underbrace{1 + 1 + \dots 1}{n} = 0
+    \end{equation}
+    then \(n\) is the \textbf{characteristics} of \(\Field\). If for a field there exists no such \(n\), then its characteristics is \(0\).
+\end{definition}
+
+\begin{theorem}
+    If \(\Field\) is a finite field, then the number of elements of \(\Field\) must be in form of \(p^k\) where \(p\) isa prime number and \(k \in \Naturals\). Also fro every number in such form there exists a unique \(\Field\) with \(p^k\) elements.
+\end{theorem}
+
+If \(\Field\) is a field then the set of all polynomials with the coefficients in \(\Field\) is denoted by \(\squareFunc{\Field}{x}\), that is
+\begin{equation*}
+    \squareFunc{\Field}{x} = \left\{ \sum_{i = 0}^{n} a_i x^i \; \middle| \; a_i \in \Field \: \forall i,\ n \in \Naturals \right\}
+\end{equation*}
+
+Cleary \(\squareFunc{\Field}{x}\) does not have a multiplicative inverse for some of its non-zero elements. Define \(\func{\Field}{x}\) as follow
+\begin{equation*}
+    \func{\Field}{x} = \left\{ \frac{\func{f}{x}}{\func{g}{x}} \; \middle| \; \func{f}{x}, \func{g}{x} \in \squareFunc{\Field}{x}, \  \func{g}{x} \neq 0 \right\}
+\end{equation*}
+
+which is a field. Also, note that \(\Field \subset \squareFunc{\Field}{x} \subset \func{\Field}{x}\).
