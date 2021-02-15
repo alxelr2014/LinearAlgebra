@@ -1,2 +1,3 @@
 \contentsline {chapter}{\numberline {1}Linear Equation}{3}{}%
 \contentsline {section}{\numberline {1.1}Fields}{3}{}%
+\contentsline {section}{\numberline {1.2}Matrices}{4}{}%

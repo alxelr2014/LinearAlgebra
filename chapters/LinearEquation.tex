@@ -20,7 +20,7 @@ The set \(\Field\) together with two operation \(+\), addition, and \(\cdot\), m
 \begin{definition} [Characteristics]
     Let \(n\) be the least number such that
     \begin{equation}
-        \underbrace{1 + 1 + \dots 1}{n} = 0
+        \underbrace{1 + 1 + \dots 1}_{n} = 0
     \end{equation}
     then \(n\) is the \textbf{characteristics} of \(\Field\). If for a field there exists no such \(n\), then its characteristics is \(0\).
 \end{definition}
@@ -40,3 +40,49 @@ Cleary \(\squareFunc{\Field}{x}\) does not have a multiplicative inverse for som
 \end{equation*}
 
 which is a field. Also, note that \(\Field \subset \squareFunc{\Field}{x} \subset \func{\Field}{x}\).
+\section{Matrices}
+Let us denote the set of all metrices of size \(m \times n\) with elements in \(\Field\) by \( \Matrices{m}{n} \) and if \(m = n\) then it is equivalently denoted as \(\SquareMatrices{n}\).
+
+Matrix \(A \in \SquareMatrices{n}\) is said to be \textbf{invertiable} or \textbf{singular} if there exists a matrix \(B \in \SquareMatrices{n}\) such that \(AB = BA = \IdentityMatrix_n\).
+
+Consider the following system of linear equations:
+\begin{equation}
+    \left\{
+    \begin{alignedat}{3} \label{eq:LinearEquation}
+        % R & L   &  R & L   &  R & L 
+        a_{11}x_1 & +{} &  a_{12}x_2 & +{} & a_{1n}x_n & = y_1 \\
+        a_{21}x_1 & +{} &  a_{22}x_2 & +{} & a_{2n}x_n & = y_2 \\
+        & \vdots\\
+        a_{m1}x_1 & +{} &  a_{n2}x_2 & +{} & a_{mn}x_n & = y_m
+    \end{alignedat}
+    \right.
+\end{equation}
+with all \(a_{ij} \in \Field\). Then if \(c_k \in F,\; k = 1, \dots, n\):
+\begin{equation*}
+    (c_1 a_{11} + c_2 a_{21} + \dots c_m a_{m1})x_1 + \dots + (c_1 a_{1n} + c_2 a_{2n} + \dots c_m a_{mn})x_n = c_1 y_1 + \dots + c_m y_m
+\end{equation*}
+is \textbf{linear combination} of the \Cref{eq:LinearEquation}.
+
+\begin{definition}[Equaivalent Systems]
+    Two systems are considered equivalent if each equation in one system is a linear combination of the other system.
+\end{definition}
+
+\begin{proposition}
+    Equivalent systems of linear equations have exactly the same solution.
+\end{proposition}
+
+The linear system, \Cref{eq:LinearEquation}, can be represent in form of matrices \(AX = Y\) where \linebreak\({A = \begin{bmatrix}
+            a_{11} & \dots  & a_{1n} \\
+            \vdots & \ddots &        \\
+            a_{n1} & \dots  & a_{mn}
+        \end{bmatrix} \in \Matrices{m}{n}}\)
+and \(X = \begin{bmatrix}
+    x_1    \\
+    \vdots \\
+    x_n
+\end{bmatrix} , Y = \begin{bmatrix}
+    y_1    \\
+    \vdots \\
+    y_m
+\end{bmatrix}\)
+then the solutions of \Cref{eq:LinearEquation} are exactly the same as \(AX = Y\).
