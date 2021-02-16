@@ -43,7 +43,7 @@ which is a field. Also, note that \(\Field \subset \squareFunc{\Field}{x} \subse
 \section{Matrices}
 Let us denote the set of all metrices of size \(m \times n\) with elements in \(\Field\) by \( \Matrices{m}{n} \) and if \(m = n\) then it is equivalently denoted as \(\SquareMatrices{n}\).
 
-Matrix \(A \in \SquareMatrices{n}\) is said to be \textbf{invertiable} or \textbf{singular} if there exists a matrix \(B \in \SquareMatrices{n}\) such that \(AB = BA = \IdentityMatrix_n\).
+Matrix \(A \in \SquareMatrices{n}\) is said to be \textbf{invertiable} or \textbf{non-singular} if there exists a matrix \linebreak \(B \in \SquareMatrices{n}\) such that \(AB = BA = \IdentityMatrix_n\).
 
 Consider the following system of linear equations:
 \begin{equation}
@@ -86,3 +86,98 @@ and \(X = \begin{bmatrix}
     y_m
 \end{bmatrix}\)
 then the solutions of \Cref{eq:LinearEquation} are exactly the same as \(AX = Y\).
+
+\subsection{Elementary Row Operations}
+
+Consider a matrix \(A \in \Matrices{m}{n}\), we define three elementary row operations on A:
+\begin{enumerate}
+    \item multiplication of one row by a non-zero scalar c, denoted by \(\func{e_r}{c}\).
+    \item replacement of \(r_\cardinalTH\) row of \(A\) by row \(r\) plus \(c\) times row \(s \neq r\) that is \(r_{\text{new}} = r + cs\) and it is denoted by \(\func{e_{rs}}{c}\)
+    \item Interchange two rows \(e_{rs}\).
+\end{enumerate}
+
+\begin{theorem}
+    To each elementary row operation \(e\) there corresponds an elementary row operation \(e^{-1}\), of the same type as \(e\), such that \(\func{e^{-1}}{\func{e}{A}} = \func{e}{\func{e^{-1}}{A}} = A\) for any \(A\).
+\end{theorem}
+
+\begin{proof}
+    It is easily verified by hand.
+\end{proof}
+
+\begin{definition}[Row-equivalent]
+    If \(A\) and \(B\) are \(m \times n\) matrices over \(\Field\), we say that \(B\) is \textbf{row-equivalent} to \(A\) if \(B\) can be obtained from \(A\) by a finite sequence of elementary row operation.
+\end{definition}
+
+%to do: to be moved to some other place
+\begin{theorem}
+    If \(A\) and \(B\) are row equivalent, the homogenous systems of linear equations \(AX = 0\) and \(BX = 0\) have exactly the same solution.
+\end{theorem}
+
+\begin{definition} [Row-reduced]
+    A matrix \(A \in \Matrices{m}{n}\)  is \textbf{row-reduced} if it satisfies
+    \begin{enumerate}
+        \item the first non-zero entry in each non-zero rwo of \(A\) is equal to \(1\).
+        \item each column of \(A\) which contains the leading non-zero entry of some row has all its other entries \(0\).
+    \end{enumerate}
+\end{definition}
+
+\begin{example}
+    for example the following matrices are row-reduced
+    \begin{equation*}
+        \begin{bmatrix}
+            0 & 0 & 1 \\
+            1 & 2 & 0 \\
+            0 & 0 & 0 \\
+        \end{bmatrix}
+    \end{equation*}
+\end{example}
+
+\begin{theorem}
+    Every \(m \times n\) matrix over \(\Field\) is row-equivalent to a row-reduced matrix. However, note that, row-reduced matrices are not necessairly unique.
+\end{theorem}
+
+Each of the three elementary row operations have an equivalent \(m \times n\) matrix such that, if it is multiplied from left to \(A\), it is equivalent to that operation. For example consider the row operations on a \(4 \times 3\) matrix \(A\).
+\begin{equation*}
+    \func{e_2}{c} = \begin{bmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & c & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 \\
+    \end{bmatrix}, \quad
+    \func{e_{14}}{c} = \begin{bmatrix}
+        1 & 0 & 0 & c \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1
+    \end{bmatrix}, \quad
+    e_{14} = \begin{bmatrix}
+        0 & 0 & 0 & 1 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        1 & 0 & 0 & 0
+    \end{bmatrix}
+\end{equation*}
+
+Similary, one can define column operations as well, however, when considering their equivalent matrix, it must be multiplied from right to \(A\).
+Furthermore, row-equivalence is an equivalence relationship, that is
+\begin{definition}
+    \item [Reflexive] \(A \sim A\).
+    \item [Symmetric] \(A \sim B \ \implies A = p_1p_2 \dots p_k B \ \implies B = p_1^{-1}p_2^{-1} \dots p_k^{-1} A \ \implies B \sim A\).
+    \item [Transivite] \(A \sim B \ \implies A = p_1p_2 \dots p_k B, \; B \sim C \ \implies B = q_1q_2 \dots q_m C\) and therefore \(A =  p_1p_2 \dots p_k  q_1 \dots q_m C \implies A \sim C\)
+\end{definition}
+
+\section{Row-Reduced Echelon}
+A matrix \(A \in \Matrices{m}{n}\) is called a \textbf{row-reduced echelon} matrix if:
+\begin{enumerate}
+    \item \(A\) is row reduced.
+    \item every row of \(A\) which has all its entries \(0\) occurs below every rwo which has a non-zero entry.
+    \item if rows \(1, \dots , r\) are the non-zero row of \(A\), and if the leading non-zero entry of row \(i\) occurs in column \(k_i\), then \(k_1 < k_2 < \dots < k_r\).
+\end{enumerate}
+
+\begin{theorem}
+    Every \(m \times n\) matrix \(A\) is row-equivalent to a row-reduced echelon matrix.
+\end{theorem}
+
+\begin{definition}[Elementary matrix]
+    An \(m \times n\) matrix is said to be an \textbf{elemntary matrix} if it can be obtained from the from \(\IdentityMatrix_m\) matrix by means of a single elementary row operation.
+\end{definition}
