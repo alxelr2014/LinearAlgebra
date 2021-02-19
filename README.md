@@ -1,6 +1,6 @@
 # Linear Algebra
 
-As tought by ~~prof. in 20-21 Fall semester~~ at **Sharif University of Technology**
+As tought by ~~prof. in 19-20 Fall semester~~ at **Sharif University of Technology**
 
 Supplementary resources:
 

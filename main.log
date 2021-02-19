@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  17 FEB 2021 01:53
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  19 FEB 2021 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -440,24 +440,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 
-] (./chapters/LinearEquation.tex [2
+] (./Chapters/LinearEquation.tex [2
 
 
 ]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 4.
-(c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd) [3] [4] [5])
+(c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd) [3] [4] [5]) (./Chapters/VectorSpaces.tex [6]
+Chapter 2.
+[7
+
+])
 \tf@thm=\write4
 \openout4 = `main.thm'.
 
- [6] (./main.aux) ) 
+ [8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7027 strings out of 477454
- 115438 string characters out of 5840441
- 424149 words of memory out of 5000000
- 26410 multiletter control sequences out of 15000+600000
+ 7034 strings out of 477454
+ 115541 string characters out of 5840441
+ 424170 words of memory out of 5000000
+ 26414 multiletter control sequences out of 15000+600000
  540698 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,11n,87p,396b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,11n,87p,545b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (6 pages, 55820 bytes).
+Output written on main.xdv (8 pages, 78080 bytes).

@@ -1,0 +1,60 @@
+\chapter{Vector Spaces}
+\thispagestyle{headings}
+
+A \textbf{vector space}, also called \textbf{linear space}, consist of the followings:
+\begin{enumerate}
+    \item a field \(\Field\) of scalars.
+    \item a set \(V\) of vectors.
+    \item a vector addition \(+\), with the following properties:
+          \begin{enumerate}
+              \item \(V\) is closed under addition.
+              \item addition is commutative.
+              \item addition is associative.
+              \item addition has a unique identity element \(0\).
+              \item for each vector \(\alpha \in V\), \(\exists \beta \in V \; \suchThat \; a +b = 0\).
+          \end{enumerate}
+    \item a scalar multiplication with the following properties:
+          \begin{enumerate}
+              \item \(V\) is closed under scalar multiplication.
+              \item \((c_1c_2)\alpha = c_1(c_2 \alpha)\).
+              \item \(c(\alpha + \beta) = c \alpha + c \beta\).
+              \item \((c_1 + c_2) \alpha = c_1 \alpha + c_2 \alpha\)
+              \item scalar multiplication has a unique identity element \(1\).
+          \end{enumerate}
+\end{enumerate}
+
+\begin{definition}
+    A vector \(\beta \in V\) is said to be a \textbf{linear combination} of the vectors \(\alpha_1, \alpha_2, \dots, \alpha_n\) if there exists scalars \(c_1, c_2, \dots, c_n \in \Field\) such that:
+    \begin{equation*}
+        \beta = c_1 \alpha_1 + c_2 \alpha_2 + \dots + c_n \alpha_n = \sum_{i = 1}^{n} c_i \alpha_i
+    \end{equation*}
+\end{definition}
+
+\section{Subspaces}
+Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a subset \(W\) of \(V\) which is itself a vector space over \(\Field\) with the operations of vector addition and scalar multiplication on \(V\).
+
+\begin{theorem}
+    A non-empty subset \(W\) of \(V\) is a subspace of \(V\) if and only if for each pair of vectors \(\alpha, \beta \in W\) and each scalar \(c \in \Field\) the vector \(c\alpha + \beta \in W\).
+\end{theorem}
+
+\begin{proof}
+    Necessity: Suppose \(W\) is a non-empty subset of \(V\) with the above property. Since \(W\) is not empty then there exists a vector \(\alpha \in W\) and therefore, \((-1) \alpha + \alpha = 0 \in W\). For each \(c \in \Field\), \(c\alpha + 0 = c\alpha \in W\). Finally, if \(\beta \in W\) as well then \(1 \alpha + \beta \in W\). Therefore, \(W\) satisfies all the conditions and is a linear subspace of \(V\).
+
+    Sufficiency: If \(W\) is a subspace of \(V\) and \(\alpha, \beta \in W\) with \(c \in \Field\) then \(c\alpha + \beta \in W\).
+\end{proof}
+
+\begin{corollary}
+    Let \(V\) be a vector space over \(\Field\). The intersection of any collection subspaces of \(V\) is a subspace of \(V\).
+\end{corollary}
+
+\begin{definition}
+    Let \(S\) be a set of vector in a vector space \(V\). The subspace spanned by \(S\) is defined to be the intersection of all subsapces of \(V\) which contains \(S\) and is denoted by \(\vspan S\)
+\end{definition}
+
+\begin{theorem}
+    Let \(V\) be a vector space and \(W_1\) and \(W_2\) be two subspaces of \(V\) such that \(W_1 \cap W_2\) is a subspace of \(V\). Then \(W_1 \subset W_2 \) or \(W_2 \subset W_1\).
+\end{theorem}
+
+\begin{proof}
+    For the sake of contradiction assume neither \(W_1 \subset W_2\) nor \(W_2 \subset W_1\). Then, there are vectors \(\alpha_1\) and \(\alpha_2\) such that \(\alpha_1 \in W_1\) but \(\alpha_2 \notin W_2\) and similarly \(\alpha_2 \in W_2\) but \(\alpha_2 \notin W_1\). Since \(\alpha_1 + \alpha_2 \in W_1 \cup W_2\), then \(\alpha_1 + \alpha_2 \in W_1\) or \(\alpha_1 + \alpha_2 \in W\) which is a contradiction.
+\end{proof}
