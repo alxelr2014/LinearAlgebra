@@ -23,6 +23,14 @@ A \textbf{vector space}, also called \textbf{linear space}, consist of the follo
           \end{enumerate}
 \end{enumerate}
 
+\begin{example}
+    \(V = \Reals\) and \(\Field = \Reals\) is a vector space. Furthermore, \(V = \Reals^n\) over \(\Field = \Reals\) is a vector space with the scalar multiplication \(c (x_1,x_2,\dots,x_n) = (cx_1,cx_2,\dots ,cx_n)\).
+\end{example}
+
+\begin{example}
+    \(V = \Reals\) and \(\Field = \Integers\) is not a vector space as \(\Integers\) is not a field.
+\end{example}
+
 \begin{definition}
     A vector \(\beta \in V\) is said to be a \textbf{linear combination} of the vectors \(\alpha_1, \alpha_2, \dots, \alpha_n\) if there exists scalars \(c_1, c_2, \dots, c_n \in \Field\) such that:
     \begin{equation*}
@@ -43,18 +51,42 @@ Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a sub
     Sufficiency: If \(W\) is a subspace of \(V\) and \(\alpha, \beta \in W\) with \(c \in \Field\) then \(c\alpha + \beta \in W\).
 \end{proof}
 
-\begin{corollary}
+\begin{corollary} \label{th:IntersectionSubspace}
     Let \(V\) be a vector space over \(\Field\). The intersection of any collection subspaces of \(V\) is a subspace of \(V\).
 \end{corollary}
-
-\begin{definition}
-    Let \(S\) be a set of vector in a vector space \(V\). The subspace spanned by \(S\) is defined to be the intersection of all subsapces of \(V\) which contains \(S\) and is denoted by \(\vspan S\)
-\end{definition}
 
 \begin{theorem}
     Let \(V\) be a vector space and \(W_1\) and \(W_2\) be two subspaces of \(V\) such that \(W_1 \cap W_2\) is a subspace of \(V\). Then \(W_1 \subset W_2 \) or \(W_2 \subset W_1\).
 \end{theorem}
 
 \begin{proof}
-    For the sake of contradiction assume neither \(W_1 \subset W_2\) nor \(W_2 \subset W_1\). Then, there are vectors \(\alpha_1\) and \(\alpha_2\) such that \(\alpha_1 \in W_1\) but \(\alpha_2 \notin W_2\) and similarly \(\alpha_2 \in W_2\) but \(\alpha_2 \notin W_1\). Since \(\alpha_1 + \alpha_2 \in W_1 \cup W_2\), then \(\alpha_1 + \alpha_2 \in W_1\) or \(\alpha_1 + \alpha_2 \in W\) which is a contradiction.
+    For the sake of contradiction assume neither \(W_1 \subset W_2\) nor \(W_2 \subset W_1\). Then, there are vectors \(\alpha_1\) and \(\alpha_2\) such that \(\alpha_1 \in W_1\) but \(\alpha_2 \notin W_2\) and similarly \(\alpha_2 \in W_2\) but \(\alpha_2 \notin W_1\). Since \(\alpha_1 + \alpha_2 \in W_1 \cup W_2\), then \(\alpha_1 + \alpha_2 \in W_1\) or \(\alpha_1 + \alpha_2 \in W_2\) which is a contradiction.
+\end{proof}
+
+\begin{theorem}
+    Let \(V\) be a vector space over the inifinite field \(\Field\). If \(W_1,W_2,\dots, W_n\) are subspaces of \(V\) and \(V \subset \cup W_i\), then there exists \(k\) such that \(V = W_k\).
+\end{theorem}
+
+\section{Span}
+
+\begin{definition}
+    Let \(S\) be a set of vector in a vector space \(V\). The subspace spanned by \(S\) is defined to be the intersection of all subsapces of \(V\) which contains \(S\) and is denoted by \(\vspan S\). That is, \(\vspan S = \bigcap_{S \subset W} W \). By \Cref{th:IntersectionSubspace}, \(\vspan S\) is a linear subspace. Obviously, \(\vspan S\) is the smallest subspace containing \(S\) because if there were \(S \subset K \subset \vspan S\) since by definition \(\vspan S = \cap W \subset K\), then \(K = \vspan S\).
+\end{definition}
+
+\begin{example}
+    Let \(S = \{0\}\) then \(\vspan S =  \bigcap_{\{0\} \subset W} W = \{0\}\). Moreover:
+    \begin{equation*}
+        \vspan \emptyset = \{0\} \qquad \qquad \vspan V = V
+    \end{equation*}
+\end{example}
+
+\begin{theorem}
+    Let \(V\) is a vector space and \( S \neq \emptyset\)
+    \begin{equation*}
+        \vspan S = \left \{ c_1 \alpha_1 + \dots + c_n \alpha_n \; \middle| \; \alpha_i \in S, \; c_i \in \Field, \; n \in \natural \right \}
+    \end{equation*}
+\end{theorem}
+
+\begin{proof}
+    Let \(L\) be the set describe above. Clearly, \(S \subset L\) and \(L\) is a subsapce of \(V\) hence \(\vspan S \subset L\). Since \(S \subset \vspan S\) and \(\vspan S\) is closed under addition and scalar multiplication then \( c_1 \alpha_1 + \dots + c_n \alpha_n \in \vspan S\) hence \(L \subset \vspan S\).
 \end{proof}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  19 FEB 2021 17:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  20 FEB 2021 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -456,12 +456,12 @@ Chapter 2.
 
  [8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7034 strings out of 477454
- 115541 string characters out of 5840441
- 424170 words of memory out of 5000000
- 26414 multiletter control sequences out of 15000+600000
+ 7036 strings out of 477454
+ 115596 string characters out of 5840441
+ 424219 words of memory out of 5000000
+ 26416 multiletter control sequences out of 15000+600000
  540698 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,11n,87p,545b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,11n,87p,664b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (8 pages, 78080 bytes).
+Output written on main.xdv (8 pages, 87324 bytes).
