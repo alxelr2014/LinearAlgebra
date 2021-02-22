@@ -115,7 +115,7 @@ Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a sub
 \end{theorem}
 
 \begin{proof}
-    Let \(\alpha \in \vspan \cup W_i\) and \(\beta \in W\). By \Cref{th:LinearitySpan}, \(\alpha = \alpha_1 + \dots + \alpha_n\) where \(\alpha_i \in \cup W_i\). Define \(\alpha_1 ' = \sum _{\alpha_i \in W_1} \alpha_i\), \(\alpha_2' = \sum_{\alpha_i \in W_2, \; \alpha_i \notin W_1} \alpha_i\) and so on. Clearly, \(\alpha = \alpha_1' + \alpha_2' + \dots + \alpha_k'\) thus \(\alpha \in W\) and \(\vspan \cup W_i \subset W\).
+    Let \(\alpha \in \vspan \cup W_i\) and \(\beta \in W\). By \Cref{th:LinearitySpan}, \(\alpha = \alpha_1 + \dots + \alpha_n\) where \(\alpha_i \in \cup W_i\). Define \(\alpha_1 ' = \sum _{\alpha_i \in W_1} \alpha_i\), \(\alpha_2' = \sum_{\alpha_i \in W_2 \backslash W_1} \alpha_i\) and so on. Clearly, \(\alpha = \alpha_1' + \alpha_2' + \dots + \alpha_k'\) thus \(\alpha \in W\) and \(\vspan \cup W_i \subset W\).
     By definition, \(\beta = \beta_1 + \dots + \beta_k\) where \(\beta_i \in W_i\) and therefore, \(\beta_i \in \cap W_i \subset \vspan \cup W_i\). Since \(\vspan \cup W_i\) is a subspace of \(V\) then \(\beta \in \vspan \cup W_i\) which implies \(W = \vspan \cup W_i\).
 \end{proof}
 
@@ -149,7 +149,7 @@ Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a sub
 \end{corollary}
 
 \begin{proof}
-    Let \(\alpha, \beta \) be two bases of \(V\). By \Cref{th:BasisUpperLimit}, \(\abs{\alpha} \leq \abs{\beta}\) and \(\abs{\beta} \leq \abs{\alpha}\) therefore they must have the same number of elements. Since, there exists a finite basis \(\gamma\) then \(\alpha\) and \(\beta\) must be finite as well.
+    Let \(\alpha, \beta \) be two bases of \(V\). By \Cref{th:BasisUpperLimit}, \(\abs[\alpha] \leq \abs[\beta]\) and \(\abs[\beta] \leq \abs[\alpha]\) therefore they must have the same number of elements. Since, there exists a finite basis \(\gamma\) then \(\alpha\) and \(\beta\) must be finite as well.
 \end{proof}
 
 \begin{definition}[Dimension]
@@ -157,11 +157,11 @@ Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a sub
 \end{definition}
 
 \begin{example}
-    \(\dim \{0\} = 0\) since \(\vspan \emptyset = \{0\}\) and therefore \(\dim \{0\} = \abs{\emptyset } = 0\).
+    \(\dim \{0\} = 0\) since \(\vspan \emptyset = \{0\}\) and therefore \(\dim \{0\} = \abs[\emptyset ]= 0\).
 \end{example}
 
 \begin{corollary}
-    Let \(V\) be a finite dimensional vector space and let \( n = \dim V\). Then 
+    Let \(V\) be a finite dimensional vector space and let \( n = \dim V\). Then
     \begin{enumerate}
         \item any subset of \(V\) whichi has more then \(n\) elements is linearly dependent.
         \item no subset of \(V\) which contains fewer than \(n\) vectors can span \(V\).
@@ -171,16 +171,16 @@ Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a sub
 \begin{proof}
     \begin{enumerate}
         \item It is an immediate consequence of \Cref{th:BasisUpperLimit}.
-        \item If there was a set \(\beta = \{\beta_1 , \dots , \beta_m\}\) with \(m < n\) such that \(V = \vspan \beta\) then there must be a basis \(\beta'\) such that \(\abs{\beta'} \leq m\). Which contradicts \Cref{col:EqualityOfBasis}
+        \item If there was a set \(\beta = \{\beta_1 , \dots , \beta_m\}\) with \(m < n\) such that \(V = \vspan \beta\) then there must be a basis \(\beta'\) such that \(\abs[\beta'] \leq m\). Which contradicts \Cref{col:EqualityOfBasis}
     \end{enumerate}
 \end{proof}
 
-\begin{lemma}
+\begin{lemma} \label{lm:MakingBasis}
     Let \(S\) be a linearly independent subset of vector space \(V\). Suppose \(\beta\) is a vector in \(V\) not spanned by \(S\). Then the set \(S \cap \{\beta\}\) is linearly independent.
 \end{lemma}
 
 \begin{proof}
-    Suppose \(\alpha_1, \dots ,\alpha_m \) are distinct vectors in \(S\) and that 
+    Suppose \(\alpha_1, \dots ,\alpha_m \) are distinct vectors in \(S\) and that
     \begin{equation}
         c_1 \alpha_1 + \dots + c_m \alpha_m + b \beta = 0
     \end{equation}
@@ -192,5 +192,53 @@ Let \(V\) be a vector space over field \(\Field\). A susbspace of \(V\) is a sub
 \end{proof}
 
 \begin{theorem}
-    If \(W\) is a subspace of a finite dimensional vector space \(V\) then every linealy independent subset of \(W\) is finite and part of a basis of \(V\) and \(W\).
+    If \(W\) is a subspace of a finite dimensional vector space \(V\) then every linearly independent subset of \(W\) is finite and part of a basis of \(V\).
 \end{theorem}
+
+\begin{proof}
+    Clearly, since \(W \subset V\) then every linearly independent subset \(S\) of \(W\) must be finite and \(\abs[S] \leq \dim V\). Let \(S = \{\alpha_1, \alpha_m\} \subset W\) be linearly independent. If \(\vspan S = V\) we're done otherwise, there is \(\alpha_{m+1} \in V\) such that \(\alpha_{m+1} \notin \vspan S\). By \Cref{lm:MakingBasis}, \(S_1 = S \cup \{\alpha_{m+1}\}\) is linearly independent. Now if \(\vspan S_1 = V\) we are done. If not we continue in similar fashion. Since \(V\) is finite and any independent set can not have more than \(\dim V\) elements, then in \(\dim V - m\) steps the set \(S \cap \{\alpha_{m+1}, \dots , \alpha_n\}\) is a basis for \(V\).
+\end{proof}
+
+\begin{corollary}
+    A proper subspace \(W\) of a finite dimensional vector space \(V\) is finite dimensional and \(\dim W < \dim V\).
+\end{corollary}
+
+\begin{proof}
+    Any basis \(W\) is linearly independent subset of \(V\) and therefore it is finite.Suppose \(W\) has basis \(\{\beta_1, \dots , \beta_m\}\) with \(m \leq \dim V\). Since \(\vspan \beta = W \subsetneq V\) then there is  \(\alpha in V\) that is not in \(W\) therefore, \(\beta \cup \{\alpha\}\) is a linearly independent subset of \(V\) by \Cref{lm:MakingBasis}. Simply
+    \begin{equation*}
+        \abs[\beta] = \abs[\beta \cup \{\alpha\}] + 1 \leq n
+    \end{equation*}
+    and thus \(\dim W < \dim V\).
+\end{proof}
+
+\begin{theorem}
+    If \(W_1\) and \(W_2\) are finite dimensional subspaces of \(V\) (not necessarily finite dimensional), then \(W_1 + W_2\) is finite dimesional and
+    \begin{equation*}
+        \func{\dim}{W_1 + W_2} = \dim W_1 + \dim W_2 - \func{\dim}{W_1 \cap W_2}
+    \end{equation*}
+\end{theorem}
+
+\begin{proof}
+    \(W_1 \cap W_2\) is a finite subsapce of \(V\) and thus there are \( \alpha = \{\alpha_1, \dots , \alpha_a\}\) which form a basis for \(W_1 \cap W_2\). Furthermore, since \(W_1 \cap W_2 \subset W_1, W_2\) then there are vectors \(\beta = \{\beta_1 , \dots , \beta_b\}\) and \(\gamma = \{\gamma_1 , \dots , \gamma_c\}\) such that \(\alpha \cup \beta\) is a basis for \(W_1\) and \(\alpha \cup \gamma\) is a basis for \(W_2\). We claim that \(\alpha \cup \beta \cup \gamma\) is a basis for \(W_1 + W_2\). For all \(\xi_1 \in W_1\) and \(\xi_2 \in W_2\), \(\xi_1 + \xi_2 \in W_1 + W_2\). Writing \(\xi_1 = x_1 \alpha_1 + \dots + x_a \alpha_a + y_1 \beta_1 + \dots + y_b \beta_b\) and \(\xi_2 = x'_1 \alpha_1 + \dots x'_a \alpha_a + z_1 \gamma_1 + \dots + z_c \gamma_c\) we get
+    \begin{equation*}
+        \xi_1 + \xi_2 = \sum_{i = 1}^{a} {(x_i + x'_i)\alpha_i} +  \sum_{i = 1}^{b} {y_i \beta_i } +  \sum_{i = 1}^{c} {z_i \gamma_i} \in \func{\vspan}{\alpha \cup \beta \cup \gamma}
+    \end{equation*}
+
+    and thus \(W_1 + W_2 \subset \func{\vspan}{\alpha \cup \beta \cup \gamma}\). Cleary \(\func{\vspan}{\alpha \cup \beta \cup \gamma} \subset W_1 + W_2\) and thus \(W_1 + W_2 = \func{\vspan}{\alpha \cup \beta \cup \gamma}\). Now we need to show that \(\alpha \cup \beta \cup \gamma\) is independent. Consider
+    \begin{align*}
+                 & \sum_{i = 1}^{a} {x_i \alpha_i} +  \sum_{i = 1}^{b} {y_i \beta_i } +  \sum_{i = 1}^{c} {z_i \gamma_i}  = 0 \\
+        \implies & \sum_{i = 1}^{a} {x_i \alpha_i} +  \sum_{i = 1}^{b} {y_i \beta_i } = \sum_{i = 1}^{c} {z_i \gamma_i}
+    \end{align*}
+
+    and thus \(\sum_{i = 1}^{c} {z_i \gamma_i} \in W_1\) and as a result \(\sum_{i = 1}^{c} {z_i \gamma_i} \in W_1 \cap W_2\) therefore, writing \(\sum_{i = 1}^{c} {z_i \gamma_i} = \sum_{i = 1}^{a} {x'_i \alpha_i}\)
+    \begin{align*}
+                 & \sum_{i = 1}^{a} {x_i \alpha_i} +  \sum_{i = 1}^{b} {y_i \beta_i } = -\sum_{i = 1}^{a} {x'_i \alpha_i} \\
+        \implies & \sum_{i = 1}^{a} {(x_i + x'_i )\alpha_i} +  \sum_{i = 1}^{b} {y_i \beta_i } = 0
+    \end{align*}
+    and since \(\alpha \cup \beta\) is a basis for \(W_1\) then \(y_i = 0\). hence
+
+    \begin{equation*}
+        \sum_{i = 1}^{a} {x_i \alpha_i} + \sum_{i = 1}^{c} {z_i \gamma_i} = 0
+    \end{equation*}
+    which implies \(\alpha_i = 0, \gamma_i = 0\) as \(\alpha \cup \gamma\) is a basis for \(W_2\).
+\end{proof}

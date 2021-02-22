@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  22 FEB 2021 01:06
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  22 FEB 2021 21:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,18 +450,18 @@ LaTeX Font Info:    Trying to load font information for U+bbold on input line 4.
 Chapter 2.
 [7
 
-] [8] [9])
+] [8] [9] [10])
 \tf@thm=\write4
 \openout4 = `main.thm'.
 
- [10] (./main.aux) ) 
+ [11] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7045 strings out of 477454
- 115752 string characters out of 5840441
- 424385 words of memory out of 5000000
- 26425 multiletter control sequences out of 15000+600000
+ 7048 strings out of 477454
+ 115793 string characters out of 5840441
+ 424457 words of memory out of 5000000
+ 26428 multiletter control sequences out of 15000+600000
  540698 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,87p,664b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,12n,87p,908b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (10 pages, 116680 bytes).
+Output written on main.xdv (11 pages, 134136 bytes).
