@@ -1,0 +1,25 @@
+\thispagestyle{headings}
+\section{Applications}
+\subsection{Gaussian elimination}
+\begin{definition}[Elementary row operations]
+    Consider a matrix \(A \in \Matrices{m}{n}\), we define three elementary row operations on A:
+\begin{enumerate}
+    \item multiplication of one row by a non-zero scalar c, denoted by \(\func{e_r}{c}\).
+    \item replacement of \(r_\cardinalTH\) row of \(A\) by row \(r\) plus \(c\) times row \(s \neq r\) that is \(r_{\text{new}} = r + cs\) and it is denoted by \(\func{e_{rs}}{c}\)
+    \item Interchange two rows \(e_{rs}\).
+\end{enumerate}
+
+\end{definition}
+
+\begin{theorem}
+    To each elementary row operation \(e\) there corresponds an elementary row operation \(e^{-1}\), of the same type as \(e\), such that \(\func{e^{-1}}{\func{e}{A}} = \func{e}{\func{e^{-1}}{A}} = A\) for any \(A\).
+\end{theorem}
+
+\begin{proof}
+    It is easily verified by hand.
+\end{proof}
+\subsection{LU decomposition}
+
+\begin{theorem}
+    There exists a permuation of a matrix \(A\) that is \(LU\) decompositionable.
+\end{theorem}
