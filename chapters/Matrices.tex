@@ -1,25 +1,42 @@
+\chapter{Matrices}
 \thispagestyle{headings}
-\section{Applications}
 \subsection{Gaussian elimination}
+We can define three elementary operations that do not change the solution of the system.
 \begin{definition}[Elementary row operations]
     Consider a matrix \(A \in \Matrices{m}{n}\), we define three elementary row operations on A:
-\begin{enumerate}
-    \item multiplication of one row by a non-zero scalar c, denoted by \(\func{e_r}{c}\).
-    \item replacement of \(r_\cardinalTH\) row of \(A\) by row \(r\) plus \(c\) times row \(s \neq r\) that is \(r_{\text{new}} = r + cs\) and it is denoted by \(\func{e_{rs}}{c}\)
-    \item Interchange two rows \(e_{rs}\).
-\end{enumerate}
+    \begin{enumerate}
+        \item multiplication of one row by a non-zero scalar c, denoted by \(\func{e_r}{c}\).
+        \item replacement of \(r_\cardinalTH\) row of \(A\) by row \(r\) plus \(c\) times row \(s \neq r\) that is \(r_{\text{new}} = r + cs\) and it is denoted by \(\func{e_{rs}}{c}\)
+        \item Interchange two rows \(e_{rs}\).
+    \end{enumerate}
 
 \end{definition}
 
 \begin{theorem}
-    To each elementary row operation \(e\) there corresponds an elementary row operation \(e^{-1}\), of the same type as \(e\), such that \(\func{e^{-1}}{\func{e}{A}} = \func{e}{\func{e^{-1}}{A}} = A\) for any \(A\).
+    To each elementary row operation \(e\) there corresponds an elementary row operation \(e^{-1}\), of the same type as \(e\), such that \(\func{e^{-1}}{\func{e}{A}} = \func{e}{\func{e^{-1}}{A}} = A\) for any \(A\). Furthermore, each elementary operation has a \(n \times n\) matrix representation.
 \end{theorem}
 
 \begin{proof}
-    It is easily verified by hand.
+    It is easily verified by hand that the inverses exist and are of the same kind.
 \end{proof}
+At each step of Gaussian elimination, one takes an element to be the \textbf{pivot} and eliminate the element from the other equations. At the end, the system has been reduced to a \textbf{upper triangle} (maybe with permuation).
+For \textbf{Gauss-Jordan method} the pivot needs to be one and the element must be eliminate from all equations.
 \subsection{LU decomposition}
-
+With some assumption one can transform matrix \(A\) to an upper triangular matrix \(U\) via elementary row operations. That is, there exists an elementary matrix \(E\) such that \(EA = U\). It can be verified that \(E\) is lower triangular matrix and hence \(L = E^{-1}\) is lower triangular and \(A = LU\). The assumptions made can be simplified if we allow permuations. That is
 \begin{theorem}
-    There exists a permuation of a matrix \(A\) that is \(LU\) decompositionable.
+    There exists a permuation of a matrix \(A\) that has a \(LU\) decomposition. In other words, there exists a permuation matrix \(P\) such that
+    \begin{equation*}
+        PA = LU
+    \end{equation*}
+\end{theorem}
+
+%TODO: do the proof dumbass.
+\begin{theorem}
+    If \(A\) is strongly invertible matrix that is, every submatrix \(A(1:i,1:i)\)
+    is invertible (leading minors are non-zero) then there exists a unique lower unitriangular matrix \(L\) and a unique upper triangular matrix \(U\) such that \(A = LU\).
+\end{theorem}
+
+%TODO: do the proof dumbass.
+\begin{theorem}
+    If the decomposition \(A = LU\) exist where \(L\) is a lower unitriangular matrix, then the decomposition \(A = LDU\) exists where \(D\) is a diagonal matrix and \(L\) and \( U\) are lower and upper unitriangular matrices respectively. Furthermore, if such \(LDU\) decomposition exists and \(A = A^T\) then \(A = LDL^T\)
 \end{theorem}

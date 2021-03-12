@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  22 FEB 2021 21:50
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  12 MAR 2021 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -64,242 +64,83 @@ Package: inputenc 2020/08/01 v1.3d Input encoding file
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) (c:/texlive/texmf-local/tex/latex/local/english-theorems/english-theorems.sty
-Package: english-theorems 
- (c:/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.sty
-Style `ntheorem', Version 1.33 <2011/08/15>
-Package: ntheorem 2011/08/15 1.33
-(c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\theorem@style=\toks19
-\theorem@@style=\toks20
-\theorembodyfont=\toks21
-\theoremnumbering=\toks22
-\theorempreskipamount=\skip58
-\theorempostskipamount=\skip59
-\theoremframepreskipamount=\skip60
-\theoremframepostskipamount=\skip61
-\theoreminframepreskipamount=\skip62
-\theoreminframepostskipamount=\skip63
-\theorem@preskip=\toks23
-\theorem@postskip=\toks24
-\theorem@framepreskip=\toks25
-\theorem@framepostskip=\toks26
-\theorem@inframepreskip=\toks27
-\theorem@inframepostskip=\toks28
-\theoremindent=\dimen147
-\theorem@indent=\dimen148
-\theoremrightindent=\dimen149
-\theorem@rightindent=\dimen150
-\theoremheaderfont=\toks29
-\theoremseparator=\toks30
-\theoremprework=\toks31
-\theorempostwork=\toks32
-\theoremsymbol=\toks33
-\qedsymbol=\toks34
-\theoremkeyword=\toks35
-\qedsymbol=\toks36
-\thm@topsep=\skip64
-\thm@topsepadd=\skip65
-Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count183
-\c@currNonectr=\count184
-\mysavskip=\skip66
-Package ntheorem Info: Standard config file ntheorem.std used on input line 1184.
- (c:/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.std (c:/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
-Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
-\symlasy=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
-(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-)
-\c@currTheoremctr=\count185
-\c@endTheoremctr=\count186
-\c@Theorem=\count187
-\c@currtheoremctr=\count188
-\c@endtheoremctr=\count189
-\c@theorem=\count190
-\c@currSatzctr=\count191
-\c@endSatzctr=\count192
-\c@Satz=\count193
-\c@currsatzctr=\count194
-\c@endsatzctr=\count195
-\c@satz=\count196
-\c@currPropositionctr=\count197
-\c@endPropositionctr=\count198
-\c@Proposition=\count199
-\c@currpropositionctr=\count266
-\c@endpropositionctr=\count267
-\c@proposition=\count268
-\c@currLemmactr=\count269
-\c@endLemmactr=\count270
-\c@Lemma=\count271
-\c@currlemmactr=\count272
-\c@endlemmactr=\count273
-\c@lemma=\count274
-\c@currKorollarctr=\count275
-\c@endKorollarctr=\count276
-\c@Korollar=\count277
-\c@currkorollarctr=\count278
-\c@endkorollarctr=\count279
-\c@korollar=\count280
-\c@currCorollaryctr=\count281
-\c@endCorollaryctr=\count282
-\c@Corollary=\count283
-\c@currcorollaryctr=\count284
-\c@endcorollaryctr=\count285
-\c@corollary=\count286
-\c@currExamplectr=\count287
-\c@endExamplectr=\count288
-\c@Example=\count289
-\c@currexamplectr=\count290
-\c@endexamplectr=\count291
-\c@example=\count292
-\c@currBeispielctr=\count293
-\c@endBeispielctr=\count294
-\c@Beispiel=\count295
-\c@currbeispielctr=\count296
-\c@endbeispielctr=\count297
-\c@beispiel=\count298
-\c@currBemerkungctr=\count299
-\c@endBemerkungctr=\count300
-\c@Bemerkung=\count301
-\c@currbemerkungctr=\count302
-\c@endbemerkungctr=\count303
-\c@bemerkung=\count304
-\c@currAnmerkungctr=\count305
-\c@endAnmerkungctr=\count306
-\c@Anmerkung=\count307
-\c@curranmerkungctr=\count308
-\c@endanmerkungctr=\count309
-\c@anmerkung=\count310
-\c@currRemarkctr=\count311
-\c@endRemarkctr=\count312
-\c@Remark=\count313
-\c@currremarkctr=\count314
-\c@endremarkctr=\count315
-\c@remark=\count316
-\c@currDefinitionctr=\count317
-\c@endDefinitionctr=\count318
-\c@Definition=\count319
-\c@currdefinitionctr=\count320
-\c@enddefinitionctr=\count321
-\c@definition=\count322
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks37
-\symAMSa=\mathgroup5
-\symAMSb=\mathgroup6
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-\c@currProofctr=\count323
-\c@endProofctr=\count324
-\c@Proof=\count325
-\c@currproofctr=\count326
-\c@endproofctr=\count327
-\c@proof=\count328
-\c@currBeweisctr=\count329
-\c@endBeweisctr=\count330
-\c@Beweis=\count331
-\c@currbeweisctr=\count332
-\c@endbeweisctr=\count333
-\c@beweis=\count334
-)) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip67
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks38
-\ex@=\dimen151
+\@emptytoks=\toks19
+\ex@=\dimen147
 )) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen152
+\pmbraise@=\dimen148
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count335
+\inf@bad=\count183
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count336
-\leftroot@=\count337
+\uproot@=\count184
+\leftroot@=\count185
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count338
-\DOTSCASE@=\count339
+\classnum@=\count186
+\DOTSCASE@=\count187
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box47
 \strutbox@=\box48
-\big@size=\dimen153
+\big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count340
-\c@MaxMatrixCols=\count341
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
 \dotsspace@=\muskip16
-\c@parentequation=\count342
-\dspbrk@lvl=\count343
-\tag@help=\toks39
-\row@=\count344
-\column@=\count345
-\maxfields@=\count346
-\andhelp@=\toks40
-\eqnshift@=\dimen154
-\alignsep@=\dimen155
-\tagshift@=\dimen156
-\tagwidth@=\dimen157
-\totwidth@=\dimen158
-\lineht@=\dimen159
-\@envbody=\toks41
-\multlinegap=\skip68
-\multlinetaggap=\skip69
-\mathdisplay@stack=\toks42
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
+\tag@help=\toks20
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
+\andhelp@=\toks21
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks22
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (c:/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
-Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
-Package cleveref Info: `ntheorem' support loaded on input line 3055.
-)
-\c@currotheoremctr=\count347
-\c@endotheoremctr=\count348
-\c@otheorem=\count349
-\c@curroexamplectr=\count350
-\c@endoexamplectr=\count351
-\c@oexample=\count352
-\c@currnotectr=\count353
-\c@endnotectr=\count354
-\c@note=\count355
-\c@currprooflemmactr=\count356
-\c@endprooflemmactr=\count357
-\c@prooflemma=\count358
-\c@currresultsctr=\count359
-\c@endresultsctr=\count360
-\c@results=\count361
-) (c:/texlive/texmf-local/tex/latex/local/common/common.sty
-Package: common 
- (c:/texlive/2020/texmf-dist/tex/latex/bbold/bbold.sty
-Package: bbold 1994/04/06 Bbold symbol package
-LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
+) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (c:/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  (c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count362
-\calc@Bcount=\count363
-\calc@Adimen=\dimen160
-\calc@Bdimen=\dimen161
-\calc@Askip=\skip70
-\calc@Bskip=\skip71
+\calc@Acount=\count195
+\calc@Bcount=\count196
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count364
-\calc@Cskip=\skip72
+\calc@Ccount=\count197
+\calc@Cskip=\skip63
 ) (c:/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
@@ -307,17 +148,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count365
-\l_MT_multwidth_dim=\dimen162
-\origjot=\skip73
-\l_MT_shortvdotswithinadjustabove_dim=\dimen163
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen164
-\l_MT_above_intertext_sep=\dimen165
-\l_MT_below_intertext_sep=\dimen166
-\l_MT_above_shortintertext_sep=\dimen167
-\l_MT_below_shortintertext_sep=\dimen168
+\g_MT_multlinerow_int=\count198
+\l_MT_multwidth_dim=\dimen158
+\origjot=\skip64
+\l_MT_shortvdotswithinadjustabove_dim=\dimen159
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen160
+\l_MT_above_intertext_sep=\dimen161
+\l_MT_below_intertext_sep=\dimen162
+\l_MT_above_shortintertext_sep=\dimen163
+\l_MT_below_shortintertext_sep=\dimen164
 \xmathstrut@box=\box49
-\xmathstrut@dim=\dimen169
+\xmathstrut@dim=\dimen165
 ) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -335,11 +176,168 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (c:/texlive/texmf-local/tex/latex/local/english-theorems/english-theorems.sty
+Package: english-theorems 
+ (c:/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+(c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\theorem@style=\toks24
+\theorem@@style=\toks25
+\theorembodyfont=\toks26
+\theoremnumbering=\toks27
+\theorempreskipamount=\skip65
+\theorempostskipamount=\skip66
+\theoremframepreskipamount=\skip67
+\theoremframepostskipamount=\skip68
+\theoreminframepreskipamount=\skip69
+\theoreminframepostskipamount=\skip70
+\theorem@preskip=\toks28
+\theorem@postskip=\toks29
+\theorem@framepreskip=\toks30
+\theorem@framepostskip=\toks31
+\theorem@inframepreskip=\toks32
+\theorem@inframepostskip=\toks33
+\theoremindent=\dimen166
+\theorem@indent=\dimen167
+\theoremrightindent=\dimen168
+\theorem@rightindent=\dimen169
+\theoremheaderfont=\toks34
+\theoremseparator=\toks35
+\theoremprework=\toks36
+\theorempostwork=\toks37
+\theoremsymbol=\toks38
+\qedsymbol=\toks39
+\theoremkeyword=\toks40
+\qedsymbol=\toks41
+\thm@topsep=\skip71
+\thm@topsepadd=\skip72
+Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
+\c@endNonectr=\count199
+\c@currNonectr=\count266
+\mysavskip=\skip73
+Package ntheorem Info: Standard config file ntheorem.std used on input line 1184.
+ (c:/texlive/2020/texmf-dist/tex/latex/ntheorem/ntheorem.std (c:/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+\c@currTheoremctr=\count267
+\c@endTheoremctr=\count268
+\c@Theorem=\count269
+\c@currtheoremctr=\count270
+\c@endtheoremctr=\count271
+\c@theorem=\count272
+\c@currSatzctr=\count273
+\c@endSatzctr=\count274
+\c@Satz=\count275
+\c@currsatzctr=\count276
+\c@endsatzctr=\count277
+\c@satz=\count278
+\c@currPropositionctr=\count279
+\c@endPropositionctr=\count280
+\c@Proposition=\count281
+\c@currpropositionctr=\count282
+\c@endpropositionctr=\count283
+\c@proposition=\count284
+\c@currLemmactr=\count285
+\c@endLemmactr=\count286
+\c@Lemma=\count287
+\c@currlemmactr=\count288
+\c@endlemmactr=\count289
+\c@lemma=\count290
+\c@currKorollarctr=\count291
+\c@endKorollarctr=\count292
+\c@Korollar=\count293
+\c@currkorollarctr=\count294
+\c@endkorollarctr=\count295
+\c@korollar=\count296
+\c@currCorollaryctr=\count297
+\c@endCorollaryctr=\count298
+\c@Corollary=\count299
+\c@currcorollaryctr=\count300
+\c@endcorollaryctr=\count301
+\c@corollary=\count302
+\c@currExamplectr=\count303
+\c@endExamplectr=\count304
+\c@Example=\count305
+\c@currexamplectr=\count306
+\c@endexamplectr=\count307
+\c@example=\count308
+\c@currBeispielctr=\count309
+\c@endBeispielctr=\count310
+\c@Beispiel=\count311
+\c@currbeispielctr=\count312
+\c@endbeispielctr=\count313
+\c@beispiel=\count314
+\c@currBemerkungctr=\count315
+\c@endBemerkungctr=\count316
+\c@Bemerkung=\count317
+\c@currbemerkungctr=\count318
+\c@endbemerkungctr=\count319
+\c@bemerkung=\count320
+\c@currAnmerkungctr=\count321
+\c@endAnmerkungctr=\count322
+\c@Anmerkung=\count323
+\c@curranmerkungctr=\count324
+\c@endanmerkungctr=\count325
+\c@anmerkung=\count326
+\c@currRemarkctr=\count327
+\c@endRemarkctr=\count328
+\c@Remark=\count329
+\c@currremarkctr=\count330
+\c@endremarkctr=\count331
+\c@remark=\count332
+\c@currDefinitionctr=\count333
+\c@endDefinitionctr=\count334
+\c@Definition=\count335
+\c@currdefinitionctr=\count336
+\c@enddefinitionctr=\count337
+\c@definition=\count338
+\c@currProofctr=\count339
+\c@endProofctr=\count340
+\c@Proof=\count341
+\c@currproofctr=\count342
+\c@endproofctr=\count343
+\c@proof=\count344
+\c@currBeweisctr=\count345
+\c@endBeweisctr=\count346
+\c@Beweis=\count347
+\c@currbeweisctr=\count348
+\c@endbeweisctr=\count349
+\c@beweis=\count350
+)) (c:/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `ntheorem' support loaded on input line 3055.
+)
+\c@currotheoremctr=\count351
+\c@endotheoremctr=\count352
+\c@otheorem=\count353
+\c@curroexamplectr=\count354
+\c@endoexamplectr=\count355
+\c@oexample=\count356
+\c@currnotectr=\count357
+\c@endnotectr=\count358
+\c@note=\count359
+\c@currprooflemmactr=\count360
+\c@endprooflemmactr=\count361
+\c@prooflemma=\count362
+\c@currresultsctr=\count363
+\c@endresultsctr=\count364
+\c@results=\count365
+) (c:/texlive/texmf-local/tex/latex/local/common/common.sty
+Package: common 
+ (c:/texlive/2020/texmf-dist/tex/latex/bbold/bbold.sty
+Package: bbold 1994/04/06 Bbold symbol package
+LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
+)) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip74
 \enit@outerparindent=\dimen170
-\enit@toks=\toks43
+\enit@toks=\toks42
 \enit@inbox=\box50
 \enit@count@id=\count366
 \enitdp@description=\count367
@@ -352,26 +350,26 @@ File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 33.
  (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -422,17 +420,17 @@ Package graphics Info: Driver file: xetex.def on input line 105.
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 ) (./main.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 2.
- (c:/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 5.
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ))
 \tf@toc=\write3
 \openout3 = `main.toc'.
@@ -440,28 +438,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 
-] (./Chapters/LinearEquation.tex [2
+] (./Chapters/Matrices.tex [2
 
 
 ]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+bbold on input line 4.
-(c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd) [3] [4] [5]) (./Chapters/VectorSpaces.tex [6]
+LaTeX Font Info:    Trying to load font information for U+bbold on input line 6.
+(c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd) [3]) (./Chapters/VectorSpaces.tex [4]
 Chapter 2.
-[7
+[5
 
-] [8] [9] [10])
+] [6] [7] [8])
 \tf@thm=\write4
 \openout4 = `main.thm'.
 
- [11] (./main.aux) ) 
+ [9] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7048 strings out of 477454
- 115793 string characters out of 5840441
- 424457 words of memory out of 5000000
- 26428 multiletter control sequences out of 15000+600000
+ 7076 strings out of 477454
+ 116299 string characters out of 5840441
+ 435714 words of memory out of 5000000
+ 26457 multiletter control sequences out of 15000+600000
  540698 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,87p,908b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,12n,74p,908b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (11 pages, 134136 bytes).
+Output written on main.xdv (9 pages, 101904 bytes).
