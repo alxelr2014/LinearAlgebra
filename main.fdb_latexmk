@@ -1,12 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1615542092 "main.xdv" "main.pdf" "main" 1615542123
-  "main.xdv" 1615542092 101904 0657693539d22ae75c8baee0def4d3c9 "xelatex"
+["xdvipdfmx"] 1616163939 "main.xdv" "main.pdf" "main" 1616163943
+  "main.xdv" 1616163939 50392 bb28553d12a037335392d15e34335788 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1615542089 "c:/Users/emadz/Desktop/School/Books/Semester IV/Linear Algebra/Notes/main.tex" "main.xdv" "main" 1615542123
-  "Chapters/Matrices.tex" 1615541864 2868 488d9ef037213be2fe482f3e7cc3b76a ""
-  "Chapters/VectorSpaces.tex" 1614018024 15040 63d4b6acf623807f6e8fbd45b940e359 ""
-  "c:/Users/emadz/Desktop/School/Books/Semester IV/Linear Algebra/Notes/main.tex" 1615542086 991 bac73116dd938191739788d8b57dc31f ""
+["xelatex"] 1616163935 "c:/Users/emadz/Desktop/School/Books/Semester IV/Linear Algebra/Notes/main.tex" "main.xdv" "main" 1616163943
+  "Chapters/Matrices.tex" 1616163933 10048 573d8fffa66b94f9b68398b78df26592 ""
+  "c:/Users/emadz/Desktop/School/Books/Semester IV/Linear Algebra/Notes/main.tex" 1616143300 992 dab4b5b725198f2379b2198c4a68adc2 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1603841547 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1603835713 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1603835713 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -71,14 +70,14 @@
   "c:/texlive/2020/texmf-dist/web2c/texmf.cnf" 1603843268 39451 15a3ebee027466ecb89701aa91dfebaf ""
   "c:/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1603851620 4917463 ec99407bfeaeb7c7e4981fa16e994423 ""
   "c:/texlive/2020/texmf.cnf" 1603851410 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:/texlive/texmf-local/tex/latex/local/common/common.sty" 1614960549 3206 7c75c2c1383094b90c23ec5c7dab1dad ""
+  "c:/texlive/texmf-local/tex/latex/local/common/common.sty" 1616163718 3677 9888e998fd457fb3c188909faecb0a9b ""
   "c:/texlive/texmf-local/tex/latex/local/english-theorems/english-theorems.sty" 1613400133 4968 3b54db98576bacad74958d08701ceb3d ""
-  "main.aux" 1615542092 5344 cfbb848b29dd541e75a186469862e4f9 "xelatex"
-  "main.tex" 1615542086 991 bac73116dd938191739788d8b57dc31f ""
-  "main.toc" 1615542092 438 b0be8eb9135e4e3939d080e04a85e2a4 "xelatex"
+  "main.aux" 1616163939 1989 453dcbf44f814ec78e250daa6b8ce35e "xelatex"
+  "main.tex" 1616143300 992 dab4b5b725198f2379b2198c4a68adc2 ""
+  "main.toc" 1616163939 457 565874deda41216bff82a4a975d1061f "xelatex"
   (generated)
+  "main.log"
+  "main.aux"
   "main.thm"
   "main.xdv"
   "main.toc"
-  "main.aux"
-  "main.log"

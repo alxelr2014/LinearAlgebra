@@ -384,9 +384,5 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/bbold/bbold12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/bbold/bbold8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/bbold/bbold6.tfm
-INPUT ./Chapters/VectorSpaces.tex
-INPUT Chapters/VectorSpaces.tex
-INPUT ./Chapters/VectorSpaces.tex
-INPUT Chapters/VectorSpaces.tex
 OUTPUT main.thm
 INPUT main.aux

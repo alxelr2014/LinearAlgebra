@@ -40,3 +40,210 @@ With some assumption one can transform matrix \(A\) to an upper triangular matri
 \begin{theorem}
     If the decomposition \(A = LU\) exist where \(L\) is a lower unitriangular matrix, then the decomposition \(A = LDU\) exists where \(D\) is a diagonal matrix and \(L\) and \( U\) are lower and upper unitriangular matrices respectively. Furthermore, if such \(LDU\) decomposition exists and \(A = A^T\) then \(A = LDL^T\)
 \end{theorem}
+
+\section{Matrix Subspaces}
+\subsection{Column space}
+The \textbf{column space} of a matrix \(A \in \Matrices{m}{n}\), usually denoted by \(\colSpace A\) is the span of its columns.
+\begin{equation*}
+    \colSpace A = \set[Ax]{x \in \Field^n}
+\end{equation*}
+
+It is obvious that \(\dim \colSpace A\) is the number of linearly independent columns of \(A\).
+\subsection{Null space}
+The \textbf{null space} or \textbf{kernel} of a matrix \(A \in \Matrices{m}{n}\) is all the vectors \(x \in \Field^n\) such that \(Ax = 0\), and it is denoted by \(\ker A\).
+\begin{equation*}
+    \ker A = \set[x \in \Reals^n]{Ax = 0}
+\end{equation*}
+
+To find the null space of a matrix \(A\), we need to solve the homogeneous equation \(Ax = 0\). One way of doing this is employing the Guassian elimination to find a row reduced form of \(A\).
+
+\begin{example}
+    We want to find the null space of
+    \begin{equation*}
+        A = \begin{bmatrix}
+            1 & 2 & 1 & 3 & 2 \\
+            2 & 4 & 1 & 5 & 3 \\
+            3 & 6 & 1 & 7 & 1 \\
+            4 & 8 & 1 & 9 & 4 \\
+        \end{bmatrix}
+    \end{equation*}
+
+    we have
+    \begin{align*}
+                    & A = \begin{bmatrix}
+            1 & 2 & 1 & 3 & 2 \\
+            2 & 4 & 1 & 5 & 3 \\
+            3 & 6 & 1 & 7 & 1 \\
+            4 & 8 & 1 & 9 & 4 \\
+        \end{bmatrix} & \rightarrow \begin{bmatrix}
+            1 & 2 & 1  & 3  & 2  \\
+            0 & 0 & -1 & -1 & -1 \\
+            0 & 0 & -2 & -2 & -5 \\
+            0 & 0 & -3 & -3 & -4 \\
+        \end{bmatrix} \\
+        \rightarrow & \begin{bmatrix}
+            1 & 2 & 1  & 3  & 2  \\
+            0 & 0 & -1 & -1 & -1 \\
+            0 & 0 & 0  & 0  & -3 \\
+            0 & 0 & 0  & 0  & -1 \\
+        \end{bmatrix}     & \rightarrow \begin{bmatrix}
+            1 & 2 & 1  & 3  & 2  \\
+            0 & 0 & -1 & -1 & -1 \\
+            0 & 0 & 0  & 0  & -3 \\
+            0 & 0 & 0  & 0  & 0  \\
+        \end{bmatrix} \\
+    \end{align*}
+
+    hence we must solve the following system
+    \begin{equation*}
+        \left\{
+        \begin{alignedat}{6}
+            % R & L   &  R & L   &  R & L 
+            x_1 & +{} & 2x_2 & +{} & x_3 &+{} & 3x_4 &+{} & 2x_5 &= 0\\
+            & {}  &{}    & -{} & x_3 &-{} & x_4  &-{} & x_5 &= 0\\
+            & {}  &      & {}  &     &{}  &      &-{}  &3x_5 &= 0
+        \end{alignedat}
+        \right.
+    \end{equation*}
+
+    hence all the solutions are
+    \begin{equation*}
+        \alpha \begin{bmatrix}
+            -2 \\
+            1  \\
+            0  \\
+            0  \\
+            0
+        \end{bmatrix}
+        + \beta \begin{bmatrix}
+            -2 \\
+            0  \\
+            -1 \\
+            1  \\
+            0
+        \end{bmatrix}
+        \qquad \forall \alpha,\beta \in \Reals
+    \end{equation*}
+
+    Moreover, by turning \(A\) to its row reduced echolon form we have
+    \begin{equation*}
+        \begin{bmatrix}
+            1 & 2 & 1  & 3  & 2  \\
+            0 & 0 & -1 & -1 & -1 \\
+            0 & 0 & 0  & 0  & -3 \\
+            0 & 0 & 0  & 0  & 0  \\
+        \end{bmatrix}  \rightarrow \begin{bmatrix}
+            1 & 2 & 0 & 2 & 0 \\
+            0 & 0 & 1 & 1 & 0 \\
+            0 & 0 & 0 & 0 & 1 \\
+            0 & 0 & 0 & 0 & 0 \\
+        \end{bmatrix}
+    \end{equation*}
+
+    hence we can re-write
+    \begin{align*}
+        Rx & = \begin{bmatrix}
+            1 & 2 & 0 & 2 & 0 \\
+            0 & 0 & 1 & 1 & 0 \\
+            0 & 0 & 0 & 0 & 1 \\
+            0 & 0 & 0 & 0 & 0 \\
+        \end{bmatrix} \begin{bmatrix}
+            x_1 \\
+            x_2 \\
+            x_3 \\
+            x_4 \\
+            x_5
+        \end{bmatrix}                                                                                                                                \\
+           & =\begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1 \\
+            0 & 0 & 0 \\
+        \end{bmatrix} \underbrace{\begin{bmatrix}
+                x_1 \\
+                x_3 \\
+                x_5 \\
+            \end{bmatrix}}_{x_{\mathrm{pivot}}} + \begin{bmatrix}
+            2 & 2 \\
+            0 & 1 \\
+            0 & 0 \\
+            0 & 0 \\
+        \end{bmatrix} \underbrace{ \begin{bmatrix}
+                x_2 \\
+                x_4 \\
+            \end{bmatrix}}_{x_{\mathrm{free}}} = 0
+    \end{align*}
+
+    by removing the zero rows we get that
+    \begin{align*}
+        I x_{\mathrm{pivot}} + F x_{\mathrm{free}} = 0 \\
+        \implies \begin{bmatrix}
+            x_{\mathrm{pivot}} \\
+            x_{\mathrm{free}}
+        \end{bmatrix}
+        = \begin{bmatrix}
+            -F \\
+            I
+        \end{bmatrix}
+        x_{\mathrm{free}}
+    \end{align*}
+
+    note that, for some permuation matrix \(P\)
+    \begin{equation*}
+        \begin{bmatrix}
+            x_{\mathrm{pivot}} \\
+            x_{\mathrm{free}}
+        \end{bmatrix} = Px
+    \end{equation*}
+
+    which implies that
+    \begin{equation*}
+        x = P^{-1} \begin{bmatrix}
+            x_{\mathrm{pivot}} \\
+            x_{\mathrm{free}}
+        \end{bmatrix} =\underbrace{  P^T \begin{bmatrix}
+                -F \\
+                I
+            \end{bmatrix}}_{\text{null matrix}} x_{\mathrm{free}}
+    \end{equation*}
+\end{example}
+
+\begin{proposition}
+    For every matrix \(A \in \Matrices{m}{n}\) we have
+    \begin{enumerate}
+        \item pivot columns are linearly independent and free columns are a linear of combination of them.
+        \item non-zero rows are linearly independent.
+        \item the number of pivot columns is equal to the number of independent columns and number of independent rows.
+    \end{enumerate}
+\end{proposition}
+
+\begin{definition}
+    The \textbf{rank} of a matrix \(\rank A\) to be number of pivot columns. A \textbf{full row rank} matrix is a matrix that all of its rows are linearly independent and a \textbf{full column rank} is a matirx that all of its columns are linearly independent. Lastly, a matrix that all of its columns and row are linearly independent is called \textbf{full rank}.
+
+    Furthermore, the number free columns is equal to the \(\nullity = \dim \ker A\) and it is equal to \(n - \rank A\).
+\end{definition}
+
+\begin{proposition}
+    For the linear system \(Ax = b\) we have:
+    \begin{enumerate}
+        \item If \(A\) is full rank then only one solution.
+        \item If \(A\) is full row rank then infinitely many solution.
+        \item If \(A\) is full column rank then either no solution or one solution.
+        \item Otherwise, then the system either has no or infinitely many solutions.
+    \end{enumerate}
+\end{proposition}
+
+\subsection{Row space}
+Similar to column space, \textbf{row space} is the space spanned by the rows of \(A\) which is the same as \(\colSpace A^T\)
+
+\begin{proposition}
+    \begin{equation*}
+        \ker A \cap \colSpace A^T = \set{0}
+    \end{equation*}
+\end{proposition}
+
+\begin{theorem}
+    \begin{equation*}
+        \nullity A + \rank A = n
+    \end{equation*}
+\end{theorem}

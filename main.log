@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  12 MAR 2021 13:11
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.10.28)  19 MAR 2021 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -420,15 +420,15 @@ Package graphics Info: Driver file: xetex.def on input line 105.
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 ) (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 5.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
  (c:/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ))
@@ -444,22 +444,18 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 6.
-(c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd) [3]) (./Chapters/VectorSpaces.tex [4]
-Chapter 2.
-[5
-
-] [6] [7] [8])
+(c:/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd) [3] [4] [5])
 \tf@thm=\write4
 \openout4 = `main.thm'.
 
- [9] (./main.aux) ) 
+ [6] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7076 strings out of 477454
- 116299 string characters out of 5840441
- 435714 words of memory out of 5000000
- 26457 multiletter control sequences out of 15000+600000
+ 7071 strings out of 477454
+ 116049 string characters out of 5840441
+ 439714 words of memory out of 5000000
+ 26455 multiletter control sequences out of 15000+600000
  540698 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 71i,12n,74p,908b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,21n,74p,504b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (9 pages, 101904 bytes).
+Output written on main.xdv (6 pages, 50392 bytes).
